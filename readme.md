@@ -1,6 +1,5 @@
-# Prop overriding issue
-
-This reproduces an issue I've encountered while trying to override an external jar property within a spring-boot application.
+# spring-boot-external-property-override-issue
+reproduce an edge case issue in spring-boot-1.3.x when overriding a property from an external jar (due to spring-framework maybe?)
 
 This is quite an edge case as a set of condition have to be met in order to encounter the problem.
 Namely:
