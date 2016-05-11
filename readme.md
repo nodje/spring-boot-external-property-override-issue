@@ -4,7 +4,7 @@ reproduce an edge case issue in spring-boot-1.3.x when overriding a property fro
 This is quite an edge case as a set of condition have to be met in order to encounter the problem.
 Namely:
 - having an `application.properties` in a jar dependency inherited by the main spring-boot app
-- having an `application.yml` located at the root classpath of the spring-boot app
+- having an `application.yml` located at the **root classpath** of the spring-boot app (spring-initializer creates the `application.yml` in `src/main/resources/static` which is not taken into account by default)
 - using the `default` profile when starting the spring-boot app
 
 How to use:
