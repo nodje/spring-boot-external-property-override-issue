@@ -1,0 +1,4 @@
+app:
+    logging:
+        logstash:
+            host: common.local

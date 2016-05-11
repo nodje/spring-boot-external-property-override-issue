@@ -1,0 +1,15 @@
+logging:
+    level:
+        org: ERROR
+        com: ERROR
+app:
+    logging:
+        logstash:
+            host: app.default
+---
+spring:
+    profiles: dev
+app:
+    logging:
+        logstash:
+            host: app.dev
