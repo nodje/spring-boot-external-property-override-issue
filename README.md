@@ -1,7 +1,7 @@
 # spring-boot-external-property-override-issue
 reproduce an edge case issue in spring-boot-1.3.x when overriding a property from an external jar (due to spring-framework maybe?)
 
-This is quite an edge case as a set of condition have to be met in order to encounter the problem.
+This is quite an edge case as a set of condition has to be met in order to reproduce the problem.
 Namely:
 - having an `application.properties` in a jar dependency inherited by the main spring-boot app
 - having an `application.yml` located at the **root classpath** of the spring-boot app (spring-initializer creates the `application.yml` in `src/main/resources/static` which is not taken into account by default)
