@@ -8,14 +8,14 @@ Namely:
 - using the `default` profile when starting the spring-boot app
 
 How to use:
-The `common` external jar dependency is a maven project located in the main project. It has to be packaged and install first.\
+The `common` external jar dependency is a maven project located in the main project. It has to be packaged and installed first:
 
-``
+```
 cd common
 ./mvnw clean install
 cd ..
 ./mvnw clean spring-boot:run
-``
+```
 You can use the provided `start.sh` script which does exactly this (on *NIX env only)
 
 You'll see these logs:
@@ -59,7 +59,7 @@ Registering configuration
 Sending logs to 'app.default'
 ```
 
-but it doesn't take into account the 'non profiled' default config and instead display the property value coming from the `common` jar:
+but it doesn't take into account the 'non profiled' default config and instead displays the property value coming from the `common` jar:
 
 ```
 Registering configuration
